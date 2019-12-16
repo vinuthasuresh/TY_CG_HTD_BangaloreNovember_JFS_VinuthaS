@@ -1,0 +1,50 @@
+ create table users_info(userid int(10) not null,
+     username varchar(25) default null,
+     email varchar(25) default null,
+     password varchar(25) default null,
+     primary key(userid));
+
+
+insert into users_info values(10, 'keith', 'keith@gmail.com', 'qwert12');
+insert into users_info values(20, 'john',  'john@gmail.com', 'gjgf45');
+insert into users_info values(30, 'sam',  'sam@gmail.com', 'jfefh85');
+insert into users_info values(40, 'sheldon', 'sheldon@gmail.com', 'shelly5812');
+insert into users_info values(50, 'georgy', 'georgy@gmail.com', 'georg582');
+
+create table customers_info(customerid int(10) not null,
+   customername varchar(25) default null,
+
+
+ create table customer_info(customerid int(10) not null,
+     customername varchar(25) default null,
+     address1 varchar(25) default null,
+     address2 varchar(25) default null,
+     town varchar(25) default null,
+     postalcode int(10),
+     email varchar(25) default null,
+     telno bigint(10) default null,
+    primary key(customerid));
+
+ insert into customer_info values(100, 'John', 'Bangalore', 'Mumbai', 'Bangalore', 56988, 'john@gmail.com',9456456777);
+ insert into customer_info(password) values('john88', 'sheldon26', 'sam25');
+
+create table customers(customerid int(10),
+     customername varchar(25),
+     address1 varchar(25),
+    address2 varchar(25),
+    town varchar(25),
+     postalcode int(10),
+     email varchar(25),
+    telno int(10),
+primary key(customerid));
+
+
+
+ create table contracts (contractno int(10),
+     customerid int(10),
+     productid int(10),
+     haulierid int(10),
+    delivarydate date ,
+    delivaryday varchar(25),
+   quantity int(25));
+
